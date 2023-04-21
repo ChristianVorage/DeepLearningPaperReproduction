@@ -10,7 +10,7 @@
 | Paul Kartoidjojo |   4280961 |  p.k.kartoidjojo@student.tudelft.nl | Blogpost, Graph Pooling, Voxelization , Data Converter |
 
 
-## Sources
+# Sources
 The reproduced paper and the data is availble in the following links.  
 Data: 
 https://www.garrickorchard.com/datasets/n-caltech101 \\
@@ -22,14 +22,15 @@ https://arxiv.org/abs/2106.00216
 # Objective
 The objective of this blog is to reproduce the result [Ours(w/SFRL)] and [Ours], using only the data of N-Cal (presented in table 1 of the paper). For this project, the code was fully reproduced from scratch. 
 
-# 1. Introduction
+# Introduction
 In the reproduced paper, a Voxel Graph Convolutional Neural Network (VGCNN) is used to classify objects from event based cameras. Unlike conventional cameras that capture images, event based cameras capture changes in light intensity at each pixel, which is represented as negative and positive events. First the event-based camera data (represented in a bin file) is pre-processed into event data, then the vertices are selected and its accompanying featrures calculated. 
 
 The features are calculated using 2 types of layers: the multiscale feature relational layer (MFRL) and the single-scale feature relational layer (SFRL). In the results of the paper,it is shown that including the SFRL will result in outperforming different sorts of methods using the voxel graph convolutional neural network (VGCNN) architecture. 
 
 
 
-## Dataset
+# Dataset
+
 The paper uses different dataset, i.e. N-MNIST (N-M), NCaltech101 (N-Cal), CIFAR10-DVS (CIF10),
 N-CARS (N-C) and ASL-DVS (ASL). 
 In this blog, only the N-Cal data is used for the reproduction (as instructed).
